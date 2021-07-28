@@ -400,7 +400,7 @@ def read_trigger_config(filename):
     for i in lists:
         x = list(i.split(","))
         for j in range(len(x)): 
-            if x[j] == "ADD":
+            if x[j] == "ADD" or "OR":
                 return (x[j+1:])
     
                 
